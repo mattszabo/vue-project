@@ -1,10 +1,11 @@
+<!-- <div class="counter" v-bind:class=[ {{count}} < 0 ? redCount : '']> -->
 <template>
   <div class="counter">
     <h1> {{ label }}</h1>
-    <p> {{ count }} </p>
+    <p v-bind:class="[count >= 0 ? 'pos-count' : 'neg-count']"> {{ count }} </p>
     <button @click="increment(step)">+</button>
     <button @click="decrement(step)">-</button>
-    <input v-model="step" number></input>
+    <input v-model="step"></input>
   </div>
 </template>
 
@@ -32,3 +33,12 @@
     }
   }
 </script>
+
+<style scoped>
+  .neg-count {
+    color: #F00;
+  }
+  .pos-count {
+    color: #000;
+  }
+</style>

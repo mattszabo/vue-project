@@ -18,7 +18,23 @@ export default {
 
 </script>
 
-body {
-  font-family: Helvetica, sans-serif;
-}
+<style>
+
+  html {
+    height: 100%;
+    color: #000;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  #app {
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    text-align: center;
+  }
+
 </style>

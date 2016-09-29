@@ -15,3 +15,10 @@
     }
   }
 </script>
+
+<style scoped>
+  .hello {
+    color: #0000FF;
+    height: 100%;
+  }
+</style>
