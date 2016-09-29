@@ -2,17 +2,21 @@
   <div id="app">
     <Hello />
     <Counter label="My Counter" />
+    <Subscription />
   </div>
 </template>
 
 <script>
 import Hello    from './components/Hello'
 import Counter  from './components/Counter'
+import Subscription from './components/Subscription'
+
 // register components
 export default {
   components: {
     Hello,
-    Counter
+    Counter,
+    Subscription
   }
 }
 
