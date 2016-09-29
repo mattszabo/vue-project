@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Hello></Hello>
-    <Counter label="My Counter"></Counter>
+    <Hello />
+    <Counter label="My Counter" />
   </div>
 </template>
 
@@ -35,6 +35,7 @@ export default {
   #app {
     font-family: Source Sans Pro, Helvetica, sans-serif;
     text-align: center;
+    max-width: 600px;
   }
 
 </style>
