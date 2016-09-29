@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Hello></Hello>
-    <Counter></Counter>
+    <Counter label="My Counter"></Counter>
   </div>
 </template>
 
