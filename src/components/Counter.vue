@@ -2,7 +2,7 @@
 <template>
   <div class="counter">
     <h1> {{ label }}</h1>
-    <p v-bind:class="[count >= 0 ? 'pos-count' : 'neg-count']"> {{ count }} </p>
+    <p v-bind:class="count >= 0 ? 'pos-count' : 'neg-count'"> {{ count }} </p>
     <button @click="increment(step)">+</button>
     <button @click="decrement(step)">-</button>
     <p>Step value:
