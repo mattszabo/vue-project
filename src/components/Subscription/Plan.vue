@@ -1,7 +1,7 @@
 <template>
   <div>
     <span> {{ plan.name }} </span>
-    <span> {{ plan.price }}/month </span>
+    <span> ${{ plan.price }}/month </span>
     <button @click="setActivePlan(plan)"
             v-if="plan.name !== active.name"
     >
