@@ -1,15 +1,20 @@
 <template>
   <div class="subscription">
+    <pre>
+      {{ $data }}
+    </pre>
     <div v-for="plan in plans">
-      <span> {{ plan.name }} </span>
-      <span> ${{ plan.price }}/month </span>
-      <button>upgrade</button>
+      <Plan
+        :plan="plan"
+        :setActivePlan="setActivePlan"
+        :active="active"
+      />
     </div>
   </div>
 </template>
 
 <script>
-
+  import Plan from './Plan';
   export default {
     data() {
       return {
@@ -18,11 +23,19 @@
           { name: 'Professional', price: 50 },
           { name: 'Personal', price: 10 },
           { name: 'Free', price: 0 }
-        ]
+        ],
+        active: {}
+      }
+    },
+    components: {
+      Plan
+    },
+    methods: {
+      setActivePlan: function(plan) {
+        this.active = plan;
       }
     }
   }
-
 </script>
 
 <style scoped>

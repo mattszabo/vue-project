@@ -1,4 +1,3 @@
-<!-- <div class="counter" v-bind:class=[ {{count}} < 0 ? redCount : '']> -->
 <template>
   <div class="counter">
     <h1> {{ label }}</h1>
@@ -49,6 +48,7 @@
   .counter {
     border: 1px solid black;
     margin: 15px;
+    padding: 20px;
   }
   .neg-count {
     color: #F00;
