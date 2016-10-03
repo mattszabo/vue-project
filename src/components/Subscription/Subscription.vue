@@ -1,8 +1,5 @@
 <template>
   <div class="subscription">
-    <pre>
-      {{ $data }}
-    </pre>
     <div v-for="plan in plans">
       <Plan
         :plan="plan"
